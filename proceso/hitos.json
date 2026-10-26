@@ -238,5 +238,15 @@
       "img/14-panel-plegado.png",
       "img/14-panel-visor-1024.png"
     ]
+  },
+  {
+    "fase": "Fase 3 · giro, cortes y vías",
+    "fecha": "2026-10-26 12:10",
+    "titulo": "Publicación: portada, repositorio y página",
+    "texto": "Con el modelo terminado, Julián pidió publicar el paquete en GitHub, con una página de bienvenida que enlazara el modelo y todos los recursos (el diario del proceso y el banco de imágenes) y un pie con «U de Colombia - Psicología - Neurofisiología, por Julián Olarte». El repositorio de trabajo no se sube tal cual: tiene un historial local, archivos de configuración del trabajo y las imágenes de referencia privadas (con copyright, solo una guía interna), que no pueden salir. Por eso se escribió un script que arma el paquete público en una carpeta limpia: copia el código, el dossier, el modelo, el diario y el banco de imágenes libres; quita de la hoja de contactos y del listado la sección de imágenes privadas; reescribe los enlaces del diario para la página; genera un documento de decisiones; y falla si encuentra rutas locales, imágenes privadas o datos personales. Se comprobó que los 522 enlaces internos de la portada, el diario y el banco de imágenes apuntan a algo que existe, y que la portada se ve bien en un ordenador y en un móvil. Tras subir, se verificó con la página en vivo que el modelo publicado es idéntico byte a byte al local y que se abre con sus 10 vistas y 34 piezas. Julián aclaró que en este proyecto no hay inconveniente con la coautoría de Claude: los commits públicos la llevan y el README y la portada lo reconocen. La licencia es MIT para el código, y las imágenes conservan la suya.",
+    "datos": "69 MB · 322 archivos · modelo de 5,1 MB · portada en 4 min de GitHub Pages · 522 enlaces internos comprobados · 0 imágenes privadas",
+    "imagenes": [
+      "img/15-portada.png"
+    ]
   }
 ]
