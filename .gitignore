@@ -1,0 +1,4 @@
+.cache/
+shots/
+snc-solo*.html
+node_modules/

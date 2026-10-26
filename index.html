@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema nervioso central</title>
+<meta name="description" content="Modelo desmontable del encéfalo y la médula espinal: gira, desmonta, pela por capas, corta, rotula y recorre las vías. Neurofisiología, U de Colombia.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b06a10'/%3E%3Cpath d='M16 7c-4 0-7 3-7 6 0 1 .3 2 .8 2.8C8.7 16.6 8 18 8 19.4 8 22 10.2 24 13 24h6c2.8 0 5-2 5-4.6 0-1.4-.7-2.800-1.800-3.600.5-.8.8-1.800.8-2.800 0-3-3-6-7-6z' fill='%23fff' opacity='.92'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f4f4f1;--card:#ffffff;--ink:#1c1c1c;--muted:#5d5d58;--line:#dcdcd6;--accent:#a35f0d;--accent-ink:#ffffff;--soft:#f0e6d6;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#1b1b1a;--card:#262625;--ink:#ececea;--muted:#aaa9a3;--line:#3a3a37;--accent:#e0a050;--accent-ink:#1b1b1a;--soft:#33291b;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}
+}
+:root[data-theme="dark"]{--bg:#1b1b1a;--card:#262625;--ink:#ececea;--muted:#aaa9a3;--line:#3a3a37;--accent:#e0a050;--accent-ink:#1b1b1a;--soft:#33291b;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{padding:20px 0 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.eyebrow{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+main{flex:1}
+.hero{display:grid;grid-template-columns:1fr;gap:28px;padding:36px 0 18px;align-items:center}
+@media (min-width:900px){.hero{grid-template-columns:5fr 7fr;gap:44px;padding:56px 0 28px}}
+h1{margin:10px 0 14px;font-size:clamp(32px,6vw,52px);line-height:1.08;letter-spacing:-.02em}
+.lede{margin:0 0 24px;color:var(--muted);font-size:clamp(17px,2.2vw,20px);line-height:1.55;max-width:34em}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:650;padding:14px 22px;border-radius:12px;box-shadow:var(--shadow)}
+.cta:hover{filter:brightness(1.06)}
+.peso{margin:10px 0 0;font-size:14px;color:var(--muted)}
+.shot{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption{padding:9px 14px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+section{padding:30px 0}
+h2{margin:0 0 6px;font-size:clamp(22px,3.4vw,30px);letter-spacing:-.01em}
+.sub{margin:0 0 20px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.5}
+a.card{display:block;text-decoration:none;color:inherit;transition:transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+a.card h3{color:var(--accent)}
+a.card h3::after{content:" →"}
+.num{font:600 13px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:760px){.cols{grid-template-columns:1fr 1fr}}
+.nota{background:var(--soft);border-radius:14px;padding:16px 18px;color:var(--ink);font-size:15.5px}
+.nota b{font-weight:650}
+footer{margin-top:28px;border-top:1px solid var(--line);background:var(--card)}
+footer .wrap{padding:22px 16px;display:flex;flex-direction:column;gap:6px}
+footer p{margin:0;font-size:15px;color:var(--muted)}
+footer .pie{color:var(--ink);font-weight:600;font-size:16px}
+@media (prefers-reduced-motion:reduce){a.card{transition:none}}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <span class="eyebrow">Neurofisiología</span>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">Modelo de aula interactivo</span>
+      <h1>Sistema nervioso central</h1>
+      <p class="lede">El encéfalo y la médula espinal en 34 piezas. Gira el modelo, desmóntalo pieza por pieza, pélalo por capas, córtalo en tres planos, ponle rótulos y recorre sus vías con flujo animado.</p>
+      <a class="cta" href="explorador/">Abrir el modelo</a>
+      <p class="peso">Una sola página de 5 MB; funciona en el navegador, sin instalar nada.</p>
+    </div>
+    <figure class="shot">
+      <img src="img/portada.png" alt="El modelo del encéfalo con un plano coronal translúcido y, a la izquierda, la sección real de las piezas en ese plano" width="1920" height="1080" fetchpriority="high">
+      <figcaption>Corte coronal: el plano sobre el modelo y la sección real a la izquierda.</figcaption>
+    </figure>
+  </div>
+
+  <section aria-labelledby="que">
+    <h2 id="que">Qué puedes hacer</h2>
+    <p class="sub">Todo en una sola página; no hay que instalar nada.</p>
+    <div class="grid">
+      <div class="card"><span class="num">01</span><h3>Girar</h3><p>Diez vistas: ocho alrededor cada 45°, más la superior y la inferior. Con las flechas, arrastrando o con los puntos.</p></div>
+      <div class="card"><span class="num">02</span><h3>Desmontar</h3><p>Un deslizador separa las treinta y cuatro piezas, una tras otra. Cada una se oculta, se aísla o se vuelve translúcida.</p></div>
+      <div class="card"><span class="num">03</span><h3>Pelar por capas</h3><p>Trece pasos de afuera hacia adentro: de la duramadre al tronco del encéfalo, con el nombre de lo que se quita.</p></div>
+      <div class="card"><span class="num">04</span><h3>Cortar</h3><p>Corte sagital medio, y un visor de cortes coronal y axial: el plano recorre el modelo y se ve la sección real.</p></div>
+      <div class="card"><span class="num">05</span><h3>Recorrer las vías</h3><p>Corticoespinal, columna dorsal, espinotalámica, visual, circuito de Papez y flujo del líquido cefalorraquídeo.</p></div>
+      <div class="card"><span class="num">06</span><h3>Rotular y consultar</h3><p>Rótulos con línea de guía y una ficha por pieza: qué es, con qué se conecta y una imagen libre con su autor y su licencia.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="recursos">
+    <h2 id="recursos">Los recursos</h2>
+    <p class="sub">Además del modelo, está todo lo que se hizo para construirlo.</p>
+    <div class="grid">
+      <a class="card" href="explorador/"><h3>El modelo</h3><p>La página interactiva completa, con todos sus controles.</p></a>
+      <a class="card" href="proceso/"><h3>Cómo se construyó</h3><p>Un diario con más de veinte hitos y fotos de cada etapa: lo que funcionó, lo que no y por qué se tomó cada decisión.</p></a>
+      <a class="card" href="referencias/"><h3>Banco de imágenes</h3><p>206 imágenes libres de referencia, de 13 grupos de piezas, con autor, licencia y enlace a su fuente.</p></a>
+      <a class="card" href="https://github.com/julianolarteramos/sistema-nervioso-central/blob/main/investigacion/ANATOMIA.md"><h3>Dossier anatómico</h3><p>Unas 75 piezas con su forma, medidas, posición y conexiones, y las vías principales.</p></a>
+      <a class="card" href="https://github.com/julianolarteramos/sistema-nervioso-central/blob/main/investigacion/CONTROLES-VIABILIDAD.md"><h3>Viabilidad de los controles</h3><p>El análisis técnico previo: qué se podía hacer con el kit y a qué costo.</p></a>
+      <a class="card" href="https://github.com/julianolarteramos/sistema-nervioso-central/blob/main/DECISIONES.md"><h3>Decisiones de diseño</h3><p>Las reglas de modelado, las excepciones documentadas y lo aprendido en el camino.</p></a>
+      <a class="card" href="https://github.com/julianolarteramos/sistema-nervioso-central"><h3>Código y guía de uso</h3><p>El repositorio completo, con el README: controles, cómo reconstruir y cómo verificar.</p></a>
+    </div>
+  </section>
+
+  <section class="cols" aria-label="Notas">
+    <p class="nota"><b>Es un modelo de aula, no un atlas.</b> Las formas son esquemáticas: simplifican superficies y colores, no posiciones. Las vías son recorridos esquemáticos y los cortes se calculan sobre el modelo armado.</p>
+    <p class="nota"><b>Imágenes y créditos.</b> Las fichas usan imágenes libres (Wikimedia Commons: Gray's Anatomy 1918, BodyParts3D, fotografías de John A. Beal, Patrick J. Lynch, OpenStax y Blausen); cada una muestra su autor y su licencia. Construido con <a href="https://github.com/julianolarteramos/specimen">specimen</a> y Claude Code.</p>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="pie">U de Colombia - Psicología - Neurofisiología, por Julián Olarte</p>
+  </div>
+</footer>
+</body>
+</html>

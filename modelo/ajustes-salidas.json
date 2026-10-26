@@ -1,0 +1,18 @@
+{
+  "_nota": "Vectores de despiece (RAS, mm) que sustituyen a los de salidas.json. El planificador (scripts/planear-salidas.mjs) muestrea cada 4 mm y no ve penetraciones finas de ~1 mm que la auditoría sí halla, y reescribe salidas.json entero; por eso las correcciones a mano viven aquí. Tras cada cambio, comprobar con --solidos. El hipotálamo sale hacia adelante y poco hacia abajo porque el planificador no ve la peana del montaje y lo mandaba casi recto hacia abajo, atravesándola 2,2 mm.",
+  "puente-izq": [
+    -8.3,
+    0,
+    105
+  ],
+  "fornix-izq": [
+    -25,
+    96,
+    67
+  ],
+  "hipotalamo-izq": [
+    -10,
+    60,
+    -40
+  ]
+}

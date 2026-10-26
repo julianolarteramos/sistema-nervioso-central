@@ -1,0 +1,305 @@
+{
+ "dura": {
+  "move": [
+   0,
+   0,
+   130
+  ],
+  "cos": 1,
+  "veil": true
+ },
+ "aracnoides": {
+  "move": [
+   0,
+   0,
+   110
+  ],
+  "cos": 1,
+  "veil": true
+ },
+ "hoz": {
+  "move": [
+   0,
+   0,
+   90
+  ],
+  "cos": 1,
+  "veil": true
+ },
+ "tienda": {
+  "move": [
+   0,
+   -26,
+   65
+  ],
+  "cos": 1,
+  "veil": true
+ },
+ "frontal-izq": {
+  "move": [
+   -180.6,
+   158.3,
+   48.4
+  ],
+  "cos": 1
+ },
+ "parietal-izq": {
+  "move": [
+   -187.1,
+   9.6,
+   195.8
+  ],
+  "cos": 0.96
+ },
+ "occipital-izq": {
+  "move": [
+   -159.7,
+   -152.8,
+   42.2
+  ],
+  "cos": 1
+ },
+ "cuerpo-calloso": {
+  "move": [
+   -131.1,
+   93.1,
+   180.9
+  ],
+  "cos": 0.91
+ },
+ "septum-izq": {
+  "move": [
+   -67.8,
+   57.2,
+   204.6
+  ],
+  "cos": 1
+ },
+ "pineal-izq": {
+  "move": [
+   6.2,
+   -233.8,
+   93.9
+  ],
+  "cos": 1
+ },
+ "olfatorio-izq": {
+  "move": [
+   -48.2,
+   177.5,
+   -105.5
+  ],
+  "cos": 0.99
+ },
+ "vermis-izq": {
+  "move": [
+   1.5,
+   -206.3,
+   -76.4
+  ],
+  "cos": 1
+ },
+ "cerebelo-izq": {
+  "move": [
+   -147.6,
+   -61.3,
+   -111.6
+  ],
+  "cos": 0.98
+ },
+ "temporal-izq": {
+  "move": [
+   -162,
+   -77.2,
+   -55.9
+  ],
+  "cos": 0.77
+ },
+ "insula-izq": {
+  "move": [
+   -157.1,
+   86.5,
+   24
+  ],
+  "cos": 1
+ },
+ "putamen-izq": {
+  "move": [
+   -147.4,
+   -70.3,
+   -50.9
+  ],
+  "cos": 1
+ },
+ "pallido-izq": {
+  "move": [
+   -142.6,
+   24.9,
+   -94.7
+  ],
+  "cos": 1
+ },
+ "caudado-izq": {
+  "move": [
+   -135.9,
+   -15.6,
+   56.6
+  ],
+  "cos": 0.92
+ },
+ "cola-caudado-izq": {
+  "move": [
+   -118.7,
+   -64.2,
+   -3
+  ],
+  "cos": 0.98
+ },
+ "molde-ventricular-izq": {
+  "move": [
+   -17.2,
+   22.5,
+   149.3
+  ],
+  "cos": 0.93
+ },
+ "fornix-izq": {
+  "move": [
+   -63.5,
+   8.5,
+   126.7
+  ],
+  "cos": 0.92
+ },
+ "hipocampo-izq": {
+  "move": [
+   -104.3,
+   -18.7,
+   -62.4
+  ],
+  "cos": 1
+ },
+ "optica-izq": {
+  "move": [
+   -72.6,
+   16.5,
+   -107.7
+  ],
+  "cos": 1
+ },
+ "talamo-izq": {
+  "move": [
+   -98.7,
+   38.3,
+   25.9
+  ],
+  "cos": 1
+ },
+ "hipotalamo-izq": {
+  "move": [
+   -12,
+   39.3,
+   -115.9
+  ],
+  "cos": 0.99
+ },
+ "mesencefalo-izq": {
+  "move": [
+   -9.7,
+   0,
+   136.7
+  ],
+  "cos": 1
+ },
+ "puente-izq": {
+  "move": [
+   -9.8,
+   0,
+   138.7
+  ],
+  "cos": 1
+ },
+ "bulbo-izq": {
+  "move": [
+   -11.9,
+   15.5,
+   103.2
+  ],
+  "cos": 0.99
+ },
+ "hemisferio-der": {
+  "move": [
+   63.8,
+   1.4,
+   12.5
+  ],
+  "cos": 1
+ },
+ "rodaja-c6": {
+  "move": [
+   -18.1,
+   -113.6,
+   -0.9
+  ],
+  "cos": 0.96
+ },
+ "rodaja-t6": {
+  "move": [
+   -4,
+   -37.4,
+   10.4
+  ],
+  "cos": 0.99
+ },
+ "rodaja-l3": {
+  "move": [
+   -3.9,
+   -36.4,
+   10.2
+  ],
+  "cos": 0.99
+ },
+ "rodaja-s2": {
+  "move": [
+   -4.7,
+   -44.1,
+   12.3
+  ],
+  "cos": 0.99
+ },
+ "_orden": [
+  "dura",
+  "aracnoides",
+  "hoz",
+  "tienda",
+  "frontal-izq",
+  "parietal-izq",
+  "occipital-izq",
+  "cuerpo-calloso",
+  "septum-izq",
+  "pineal-izq",
+  "olfatorio-izq",
+  "vermis-izq",
+  "cerebelo-izq",
+  "temporal-izq",
+  "insula-izq",
+  "putamen-izq",
+  "pallido-izq",
+  "caudado-izq",
+  "cola-caudado-izq",
+  "molde-ventricular-izq",
+  "fornix-izq",
+  "hipocampo-izq",
+  "optica-izq",
+  "talamo-izq",
+  "hipotalamo-izq",
+  "mesencefalo-izq",
+  "puente-izq",
+  "bulbo-izq",
+  "hemisferio-der",
+  "rodaja-c6",
+  "rodaja-t6",
+  "rodaja-l3",
+  "rodaja-s2"
+ ]
+}
